@@ -3,8 +3,8 @@
 > Spring Boot, MySQL, JPA
 
 ## To-do
-- User BackEnd 구현
-    - userController, userService, userEntity 등
 
 ## Done
+- User BackEnd 구현
+    - userController, userService, userEntity 등
 - DB 설계
