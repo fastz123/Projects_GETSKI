@@ -2,15 +2,15 @@
 
 ![version](https://img.shields.io/badge/version-0.0.1-orange?)
 ![spring](https://img.shields.io/badge/spring-4.3.4-green?logo=spring)
-![vue.js](https://img.shields.io/badge/vue.js-vue_cli_3-yellow?logo=vue.js)
-![d3.js](https://img.shields.io/badge/d3.js-5.15.0-orange?logo=d3.js)
-![mybatis](https://img.shields.io/badge/mybatis-3-red?logo=)
+![React.js](https://img.shields.io/badge/React-v16.13.0-yellow)
 ![mysql](https://img.shields.io/badge/mysql-8.0-blue?logo=mysql)
+![JPA](https://img.shields.io/badge/JPA-v2.1-green)
 
 
 
 ## Table of Contents
 
+- [Teams](#Teams)
 - [Introduction](#introduction)
 - [Prerequisite](#prerequisite)
 - [Development](#development)
@@ -21,23 +21,49 @@
 - [License](#license)
 - [About](#about)
 
+
+
+## Teams
+
+- 김민호
+- 김은영
+- 김지희 
+- 박성호 
+- 신광식 
+
 ## Introduction
-회원은 홈페이지에서 제공되고 있는 음식을 식단에 추가, 삭제가 가능함으로써 영양정보를 관리를 할 수 있습니다. 
+관리자의 경우 전국에 존재하는 스키장의 정보와 사진들을 종합하여 등록한다.
 
-특히, 음식에는 먹거리 재료, 성분을 공개할 뿐만 아니라 알러지 정보까지 시각적으로 잘 보여 주고 있어서 회원이 음식을 선택할 때 유용합니다. 
+강사의 경우 자신이 원하는 스키장의 강습을 등록하고 다양한 정보와 사진들을 추가하여 강습자를 모집한다.
 
-그외, 회원가입, 비밀번호 찾기, 공지사항, qna 기본기능을 구현하였고 검색 기능 과 검색어 순위를 제공하고 있습니다.
+강습자의 경우 강사가 등록해놓은 강습중 선택하여 후기와 별점을 보고 구매를 결정한다.
 
 ```
-Safe Food Information
-|-- src
-|     `-- main
-|           `-- java
-|                 `-- Controller
-|                 `-- DAO
-|                 `-- Service
-|           `-- resources
-|
+getski
+|-- backend
+	`--gradle
+	`--main/java/com/getski
+						`-- config
+						`-- controller
+						`-- exception
+						`-- model
+						`-- payload
+						`-- repository
+						..
+|-- frontend
+	`-- src
+		`-- App.js
+		`-- index.js
+		`-- component
+		`-- constants
+		`-- lecture
+		`-- resort
+		`-- container
+		`-- user
+		..
+	`-- pakage.json
+	..
+|-- images
  ``
 ```
 ## Prerequisite
@@ -59,59 +85,30 @@ $ git push
 ```
 
 ### Role
-Spring boot 에 pagination 처리, member CRUD API, Vue.js 아용 게시판 구현, 검색어 순위 기능 제공
+Spring boot 에 REST API 처리, User,Resort,Lecture에 대한 CRUD API 구현
 
-## Design
+React.js 이용 회원가입, 로그인, Resort 등록, 조회 Front구현
 
-class 관계도
+## DB Design
 
-![class](../../assets/images/safe/c.PNG)
+![ERD](./images/ERD.JPG)
 
 
 
 ## Result
-<center>상단 NAV bar 및 이미지</center>
 
-![](../../assets/images/safe/f1.PNG)
-
-<center>상단 nav bar 고정 및 메인화면 및 footer</center>
-
-![](../../assets/images/safe/f2.PNG)
-
-<center>로그인 및 회원가입 및 아이디비밀번호찾기</center>
-
-![](../../assets/images/safe/f3.PNG)
-
-<center>페이지형식의 상품목록페이지 및 추가버튼</center>
-
-![](../../assets/images/safe/f5.PNG)
-
-<center>식품 상세 정보 페이지</center>
-
-![](../../assets/images/safe/f6.PNG)
-
-<center>내 식단 페이지</center>
-
-![](../../assets/images/safe/f7.PNG)
-
-<center>공지사항 페이지</center>
-
-![](../../assets/images/safe/f8.PNG)
-
-<center>Q&A페이지</center>
-
-![](../../assets/images/safe/f9.PNG)
-
-<center>검색버튼을 통한 검색창 및 검색 순위</center>
-![](../../assets/images/safe/f10.PNG)
-
-
-## Video
-[![Video Label](http://img.youtube.com/vi/T2uOkh1bpcg/0.jpg)](https://www.youtube.com/watch?v=T2uOkh1bpcg)
-<center>위 img 클릭 시 영상으로 넘어갑니다. 😀</center>
+> Swagger-ui
+>
+> ​	http://54.180.136.20:8080/swagger-ui.html
+>
+> Web site
+>
+> ​	http://i02a304.p.ssafy.io/
+>
+> 
 
 ## license
 MIT License
 
 ## About
-Authored and maintained by **ingyu**
+Authored and maintained by **MinhoKim**
