@@ -43,13 +43,13 @@ getski
 |-- backend
 	`--gradle
 	`--main/java/com/getski
-						`-- config
-						`-- controller
-						`-- exception
-						`-- model
-						`-- payload
-						`-- repository
-						..
+				`-- config
+				`-- controller
+				`-- exception
+				`-- model
+				`-- payload
+				`-- repository
+				..
 |-- frontend
 	`-- src
 		`-- App.js
