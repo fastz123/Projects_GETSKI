@@ -1,4 +1,4 @@
-#### ㅡ Safe Food Information Website
+#### ㅡ GETSKI (강습 연계 플랫폼)
 
 ![version](https://img.shields.io/badge/version-0.0.1-orange?)
 ![spring](https://img.shields.io/badge/spring-4.3.4-green?logo=spring)
