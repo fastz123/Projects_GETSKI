@@ -85,9 +85,32 @@ $ git push
 ```
 
 ### Role
-Spring boot 에 REST API 처리, User,Resort,Lecture에 대한 CRUD API 구현
+- Back-End
 
-React.js 이용 회원가입, 로그인, Resort 등록, 조회 Front구현
+  - Spring boot 에 REST API 처리
+
+  - JPA
+
+  - Spring security
+
+  - VO
+
+  - repository
+
+  - service
+
+  - controller
+
+    - User CRUD API
+
+    - Resort CRUD API
+    - Lecture CRUD  API 구현
+
+- Front-End
+  - React.js
+    - 회원가입, 로그인 page
+    - 회원정보 조회 및 수정 page
+    - Resort 등록, 조회 page 구현
 
 ## DB Design
 
@@ -97,15 +120,33 @@ React.js 이용 회원가입, 로그인, Resort 등록, 조회 Front구현
 
 ## Result
 
-> Swagger-ui
->
-> ​	http://54.180.136.20:8080/swagger-ui.html
->
-> Web site
->
-> ​	http://i02a304.p.ssafy.io/
->
-> 
+- 메인페이지(Full Page)
+
+![main](./images/main.JPG)
+
+- 강습추천
+
+![main에서이어지는강습추천](./images/main에서이어지는강습추천.JPG)
+
+- 지역별 강습 보기
+
+![main에서이어지는지역별강습보기버튼](./images/main에서이어지는지역별강습보기버튼.JPG)
+
+- 지역별 강습
+
+![지역별강습](./images/지역별강습.JPG)
+
+- 지역별 스키장
+
+![지역별스키장](./images/지역별스키장.JPG)
+
+- 새 강습 등록
+
+![새강습등록](./images/새강습등록.JPG)
+
+- 강습 상세정보
+
+![강습상세정보](./images/강습상세정보.JPG)
 
 ## license
 MIT License
